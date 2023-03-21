@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6385E50C29C732BC00531852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E50B29C732BC00531852 /* AppDelegate.swift */; };
+		6385E50E29C732BC00531852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E50D29C732BC00531852 /* SceneDelegate.swift */; };
+		6385E51029C732BC00531852 /* WellcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E50F29C732BC00531852 /* WellcomeVC.swift */; };
+		6385E51329C732BC00531852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6385E51129C732BC00531852 /* Main.storyboard */; };
+		6385E51629C732BC00531852 /* FlipCard_Memorize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6385E51429C732BC00531852 /* FlipCard_Memorize.xcdatamodeld */; };
+		6385E51829C732BF00531852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6385E51729C732BF00531852 /* Assets.xcassets */; };
+		6385E51B29C732BF00531852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6385E51929C732BF00531852 /* LaunchScreen.storyboard */; };
+		6385E52629C732C000531852 /* FlipCard_MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E52529C732C000531852 /* FlipCard_MemorizeTests.swift */; };
+		6385E53029C732C000531852 /* FlipCard_MemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E52F29C732C000531852 /* FlipCard_MemorizeUITests.swift */; };
+		6385E53229C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E53129C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift */; };
+		6385E54329C9B85400531852 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54229C9B85400531852 /* Extenstions.swift */; };
+		6385E54529C9B98200531852 /* CreateCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54429C9B98200531852 /* CreateCardVC.swift */; };
+		6385E54729C9BA7A00531852 /* CreateCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54629C9BA7A00531852 /* CreateCardViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6385E52229C732C000531852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6385E50029C732BC00531852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6385E50729C732BC00531852;
+			remoteInfo = "FlipCard Memorize";
+		};
+		6385E52C29C732C000531852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6385E50029C732BC00531852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6385E50729C732BC00531852;
+			remoteInfo = "FlipCard Memorize";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6385E50829C732BC00531852 /* FlipCard Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlipCard Memorize.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6385E50B29C732BC00531852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6385E50D29C732BC00531852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6385E50F29C732BC00531852 /* WellcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeVC.swift; sourceTree = "<group>"; };
+		6385E51229C732BC00531852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6385E51529C732BC00531852 /* FlipCard_Memorize.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlipCard_Memorize.xcdatamodel; sourceTree = "<group>"; };
+		6385E51729C732BF00531852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6385E51A29C732BF00531852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6385E51C29C732BF00531852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6385E52129C732C000531852 /* FlipCard MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlipCard MemorizeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6385E52529C732C000531852 /* FlipCard_MemorizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard_MemorizeTests.swift; sourceTree = "<group>"; };
+		6385E52B29C732C000531852 /* FlipCard MemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlipCard MemorizeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6385E52F29C732C000531852 /* FlipCard_MemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard_MemorizeUITests.swift; sourceTree = "<group>"; };
+		6385E53129C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard_MemorizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6385E54229C9B85400531852 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		6385E54429C9B98200531852 /* CreateCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardVC.swift; sourceTree = "<group>"; };
+		6385E54629C9BA7A00531852 /* CreateCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6385E50529C732BC00531852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385E51E29C732C000531852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385E52829C732C000531852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6385E4FF29C732BC00531852 = {
+			isa = PBXGroup;
+			children = (
+				6385E50A29C732BC00531852 /* FlipCard Memorize */,
+				6385E52429C732C000531852 /* FlipCard MemorizeTests */,
+				6385E52E29C732C000531852 /* FlipCard MemorizeUITests */,
+				6385E50929C732BC00531852 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6385E50929C732BC00531852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6385E50829C732BC00531852 /* FlipCard Memorize.app */,
+				6385E52129C732C000531852 /* FlipCard MemorizeTests.xctest */,
+				6385E52B29C732C000531852 /* FlipCard MemorizeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6385E50A29C732BC00531852 /* FlipCard Memorize */ = {
+			isa = PBXGroup;
+			children = (
+				6385E54129C9B82C00531852 /* Utilities */,
+				6385E54029C9B04E00531852 /* ViewModel */,
+				6385E53F29C9B02F00531852 /* Model */,
+				6385E53E29C9AB8900531852 /* ViewController */,
+				6385E50B29C732BC00531852 /* AppDelegate.swift */,
+				6385E50D29C732BC00531852 /* SceneDelegate.swift */,
+				6385E51129C732BC00531852 /* Main.storyboard */,
+				6385E51729C732BF00531852 /* Assets.xcassets */,
+				6385E51929C732BF00531852 /* LaunchScreen.storyboard */,
+				6385E51C29C732BF00531852 /* Info.plist */,
+				6385E51429C732BC00531852 /* FlipCard_Memorize.xcdatamodeld */,
+			);
+			path = "FlipCard Memorize";
+			sourceTree = "<group>";
+		};
+		6385E52429C732C000531852 /* FlipCard MemorizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6385E52529C732C000531852 /* FlipCard_MemorizeTests.swift */,
+			);
+			path = "FlipCard MemorizeTests";
+			sourceTree = "<group>";
+		};
+		6385E52E29C732C000531852 /* FlipCard MemorizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6385E52F29C732C000531852 /* FlipCard_MemorizeUITests.swift */,
+				6385E53129C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift */,
+			);
+			path = "FlipCard MemorizeUITests";
+			sourceTree = "<group>";
+		};
+		6385E53E29C9AB8900531852 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6385E50F29C732BC00531852 /* WellcomeVC.swift */,
+				6385E54429C9B98200531852 /* CreateCardVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6385E53F29C9B02F00531852 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6385E54029C9B04E00531852 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6385E54629C9BA7A00531852 /* CreateCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6385E54129C9B82C00531852 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6385E54229C9B85400531852 /* Extenstions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6385E50729C732BC00531852 /* FlipCard Memorize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6385E53529C732C000531852 /* Build configuration list for PBXNativeTarget "FlipCard Memorize" */;
+			buildPhases = (
+				6385E50429C732BC00531852 /* Sources */,
+				6385E50529C732BC00531852 /* Frameworks */,
+				6385E50629C732BC00531852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlipCard Memorize";
+			productName = "FlipCard Memorize";
+			productReference = 6385E50829C732BC00531852 /* FlipCard Memorize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6385E52029C732C000531852 /* FlipCard MemorizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6385E53829C732C000531852 /* Build configuration list for PBXNativeTarget "FlipCard MemorizeTests" */;
+			buildPhases = (
+				6385E51D29C732C000531852 /* Sources */,
+				6385E51E29C732C000531852 /* Frameworks */,
+				6385E51F29C732C000531852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6385E52329C732C000531852 /* PBXTargetDependency */,
+			);
+			name = "FlipCard MemorizeTests";
+			productName = "FlipCard MemorizeTests";
+			productReference = 6385E52129C732C000531852 /* FlipCard MemorizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6385E52A29C732C000531852 /* FlipCard MemorizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6385E53B29C732C000531852 /* Build configuration list for PBXNativeTarget "FlipCard MemorizeUITests" */;
+			buildPhases = (
+				6385E52729C732C000531852 /* Sources */,
+				6385E52829C732C000531852 /* Frameworks */,
+				6385E52929C732C000531852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6385E52D29C732C000531852 /* PBXTargetDependency */,
+			);
+			name = "FlipCard MemorizeUITests";
+			productName = "FlipCard MemorizeUITests";
+			productReference = 6385E52B29C732C000531852 /* FlipCard MemorizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6385E50029C732BC00531852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					6385E50729C732BC00531852 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					6385E52029C732C000531852 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6385E50729C732BC00531852;
+					};
+					6385E52A29C732C000531852 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6385E50729C732BC00531852;
+					};
+				};
+			};
+			buildConfigurationList = 6385E50329C732BC00531852 /* Build configuration list for PBXProject "FlipCard Memorize" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6385E4FF29C732BC00531852;
+			productRefGroup = 6385E50929C732BC00531852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6385E50729C732BC00531852 /* FlipCard Memorize */,
+				6385E52029C732C000531852 /* FlipCard MemorizeTests */,
+				6385E52A29C732C000531852 /* FlipCard MemorizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6385E50629C732BC00531852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385E51B29C732BF00531852 /* LaunchScreen.storyboard in Resources */,
+				6385E51829C732BF00531852 /* Assets.xcassets in Resources */,
+				6385E51329C732BC00531852 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385E51F29C732C000531852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385E52929C732C000531852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6385E50429C732BC00531852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385E51029C732BC00531852 /* WellcomeVC.swift in Sources */,
+				6385E54329C9B85400531852 /* Extenstions.swift in Sources */,
+				6385E50C29C732BC00531852 /* AppDelegate.swift in Sources */,
+				6385E51629C732BC00531852 /* FlipCard_Memorize.xcdatamodeld in Sources */,
+				6385E54529C9B98200531852 /* CreateCardVC.swift in Sources */,
+				6385E54729C9BA7A00531852 /* CreateCardViewModel.swift in Sources */,
+				6385E50E29C732BC00531852 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385E51D29C732C000531852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385E52629C732C000531852 /* FlipCard_MemorizeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385E52729C732C000531852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385E53029C732C000531852 /* FlipCard_MemorizeUITests.swift in Sources */,
+				6385E53229C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6385E52329C732C000531852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6385E50729C732BC00531852 /* FlipCard Memorize */;
+			targetProxy = 6385E52229C732C000531852 /* PBXContainerItemProxy */;
+		};
+		6385E52D29C732C000531852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6385E50729C732BC00531852 /* FlipCard Memorize */;
+			targetProxy = 6385E52C29C732C000531852 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6385E51129C732BC00531852 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6385E51229C732BC00531852 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6385E51929C732BF00531852 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6385E51A29C732BF00531852 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6385E53329C732C000531852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6385E53429C732C000531852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6385E53629C732C000531852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlipCard Memorize/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-Memorize";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6385E53729C732C000531852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlipCard Memorize/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-Memorize";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6385E53929C732C000531852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-MemorizeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipCard Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlipCard Memorize";
+			};
+			name = Debug;
+		};
+		6385E53A29C732C000531852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-MemorizeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipCard Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlipCard Memorize";
+			};
+			name = Release;
+		};
+		6385E53C29C732C000531852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-MemorizeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlipCard Memorize";
+			};
+			name = Debug;
+		};
+		6385E53D29C732C000531852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-MemorizeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlipCard Memorize";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6385E50329C732BC00531852 /* Build configuration list for PBXProject "FlipCard Memorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385E53329C732C000531852 /* Debug */,
+				6385E53429C732C000531852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6385E53529C732C000531852 /* Build configuration list for PBXNativeTarget "FlipCard Memorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385E53629C732C000531852 /* Debug */,
+				6385E53729C732C000531852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6385E53829C732C000531852 /* Build configuration list for PBXNativeTarget "FlipCard MemorizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385E53929C732C000531852 /* Debug */,
+				6385E53A29C732C000531852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6385E53B29C732C000531852 /* Build configuration list for PBXNativeTarget "FlipCard MemorizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385E53C29C732C000531852 /* Debug */,
+				6385E53D29C732C000531852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6385E51429C732BC00531852 /* FlipCard_Memorize.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6385E51529C732BC00531852 /* FlipCard_Memorize.xcdatamodel */,
+			);
+			currentVersion = 6385E51529C732BC00531852 /* FlipCard_Memorize.xcdatamodel */;
+			path = FlipCard_Memorize.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6385E50029C732BC00531852 /* Project object */;
+}

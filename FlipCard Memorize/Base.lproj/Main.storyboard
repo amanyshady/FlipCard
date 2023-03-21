@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B4d-k6-4og">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WellcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WellcomeVC" customModule="FlipCard_Memorize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Flip Card!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBc-fR-YVb">
+                                <rect key="frame" x="129" y="104" width="117" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTo-E4-tDu">
+                                <rect key="frame" x="50" y="404" width="275" height="40"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Memorize">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-3G-YAr">
+                                <rect key="frame" x="50" y="295" width="275" height="40"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6qc-LS-ffV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Create A Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ww0-n3-ixy" kind="show" identifier="createCardVC" id="E98-2i-3cM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KTo-E4-tDu" firstAttribute="height" secondItem="zRP-3G-YAr" secondAttribute="height" id="Arh-YJ-AGc"/>
+                            <constraint firstItem="DBc-fR-YVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="BOa-TV-Qep"/>
+                            <constraint firstItem="DBc-fR-YVb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ClR-KU-1s7"/>
+                            <constraint firstItem="KTo-E4-tDu" firstAttribute="centerX" secondItem="zRP-3G-YAr" secondAttribute="centerX" id="P1P-CH-Ba4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zRP-3G-YAr" secondAttribute="trailing" constant="50" id="Udr-fN-q78"/>
+                            <constraint firstItem="KTo-E4-tDu" firstAttribute="width" secondItem="zRP-3G-YAr" secondAttribute="width" id="VPu-5I-0BG"/>
+                            <constraint firstItem="zRP-3G-YAr" firstAttribute="top" secondItem="DBc-fR-YVb" secondAttribute="bottom" constant="167" id="h7e-Mb-gdu"/>
+                            <constraint firstItem="KTo-E4-tDu" firstAttribute="top" secondItem="zRP-3G-YAr" secondAttribute="bottom" constant="69" id="t73-cR-vBw"/>
+                            <constraint firstItem="zRP-3G-YAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="vZn-hr-mKA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="krE-Ul-KCy"/>
+                    <connections>
+                        <outlet property="createCardBtn" destination="zRP-3G-YAr" id="luw-c9-E9e"/>
+                        <outlet property="memorizeBtn" destination="KTo-E4-tDu" id="tMg-uU-YUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.2" y="4.9475262368815596"/>
+        </scene>
+        <!--Create CardVC-->
+        <scene sceneID="GvA-HJ-CUx">
+            <objects>
+                <viewController id="ww0-n3-ixy" customClass="CreateCardVC" customModule="FlipCard_Memorize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYV-93-f1b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your own Card :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-27-GWd">
+                                <rect key="frame" x="20" y="94" width="194" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="APD-wQ-ODJ">
+                                <rect key="frame" x="20" y="215" width="335" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsA-1y-BfF">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBh-WQ-qAg">
+                                        <rect key="frame" x="123.5" y="0.0" width="211.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VTW-Mj-keT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="916-lq-O5m">
+                                <rect key="frame" x="20" y="345" width="335" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pav-Vj-raf">
+                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeM-oh-hG1">
+                                        <rect key="frame" x="121.5" y="0.0" width="213.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0Yl-Rr-QL5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-9z-0Z7">
+                                <rect key="frame" x="287" y="503" width="61" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAction:" destination="ww0-n3-ixy" eventType="touchUpInside" id="XL5-uh-pGF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2AC-Ro-m48"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="916-lq-O5m" firstAttribute="top" secondItem="APD-wQ-ODJ" secondAttribute="bottom" constant="80" id="5gH-eL-wYY"/>
+                            <constraint firstItem="916-lq-O5m" firstAttribute="trailing" secondItem="APD-wQ-ODJ" secondAttribute="trailing" id="5lL-KE-ojt"/>
+                            <constraint firstItem="APD-wQ-ODJ" firstAttribute="leading" secondItem="VV4-27-GWd" secondAttribute="leading" id="8mU-VB-N8D"/>
+                            <constraint firstItem="916-lq-O5m" firstAttribute="leading" secondItem="APD-wQ-ODJ" secondAttribute="leading" id="Bh2-WE-8Yp"/>
+                            <constraint firstItem="APD-wQ-ODJ" firstAttribute="top" secondItem="VV4-27-GWd" secondAttribute="bottom" constant="100" id="MSB-5X-JNb"/>
+                            <constraint firstItem="2AC-Ro-m48" firstAttribute="trailing" secondItem="APD-wQ-ODJ" secondAttribute="trailing" constant="20" id="Wk2-IG-RyG"/>
+                            <constraint firstItem="VV4-27-GWd" firstAttribute="top" secondItem="2AC-Ro-m48" secondAttribute="top" constant="50" id="f6S-hq-93L"/>
+                            <constraint firstItem="VV4-27-GWd" firstAttribute="leading" secondItem="2AC-Ro-m48" secondAttribute="leading" constant="20" id="waJ-d1-K9S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="74A-I3-QY2"/>
+                    <connections>
+                        <outlet property="answerTxtField" destination="eeM-oh-hG1" id="Qqx-aD-lQr"/>
+                        <outlet property="quesTxtField" destination="yBh-WQ-qAg" id="3BT-YO-TrA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjI-N4-but" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="-171.36431784107947"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6su-kz-H2a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B4d-k6-4og" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yjH-F5-HhD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vdz-Kf-rH9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJQ-oq-WBr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="4.9475262368815596"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
