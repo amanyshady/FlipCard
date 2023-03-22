@@ -123,12 +123,11 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-9z-0Z7">
-                                <rect key="frame" x="287" y="503" width="61" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-9z-0Z7">
+                                <rect key="frame" x="263" y="495" width="72" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="SAVE">
+                                <state key="normal" title="CREATE">
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
@@ -144,8 +143,10 @@
                             <constraint firstItem="APD-wQ-ODJ" firstAttribute="leading" secondItem="VV4-27-GWd" secondAttribute="leading" id="8mU-VB-N8D"/>
                             <constraint firstItem="916-lq-O5m" firstAttribute="leading" secondItem="APD-wQ-ODJ" secondAttribute="leading" id="Bh2-WE-8Yp"/>
                             <constraint firstItem="APD-wQ-ODJ" firstAttribute="top" secondItem="VV4-27-GWd" secondAttribute="bottom" constant="100" id="MSB-5X-JNb"/>
+                            <constraint firstItem="uIv-9z-0Z7" firstAttribute="trailing" secondItem="916-lq-O5m" secondAttribute="trailing" constant="-20" id="Su0-9X-v4J"/>
                             <constraint firstItem="2AC-Ro-m48" firstAttribute="trailing" secondItem="APD-wQ-ODJ" secondAttribute="trailing" constant="20" id="Wk2-IG-RyG"/>
                             <constraint firstItem="VV4-27-GWd" firstAttribute="top" secondItem="2AC-Ro-m48" secondAttribute="top" constant="50" id="f6S-hq-93L"/>
+                            <constraint firstItem="uIv-9z-0Z7" firstAttribute="top" secondItem="916-lq-O5m" secondAttribute="bottom" constant="100" id="qCK-xI-0N4"/>
                             <constraint firstItem="VV4-27-GWd" firstAttribute="leading" secondItem="2AC-Ro-m48" secondAttribute="leading" constant="20" id="waJ-d1-K9S"/>
                         </constraints>
                     </view>

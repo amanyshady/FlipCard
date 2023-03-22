@@ -20,6 +20,8 @@
 		6385E54329C9B85400531852 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54229C9B85400531852 /* Extenstions.swift */; };
 		6385E54529C9B98200531852 /* CreateCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54429C9B98200531852 /* CreateCardVC.swift */; };
 		6385E54729C9BA7A00531852 /* CreateCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54629C9BA7A00531852 /* CreateCardViewModel.swift */; };
+		6385E54F29CB1F4200531852 /* CardItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54D29CB1F4200531852 /* CardItem+CoreDataClass.swift */; };
+		6385E55029CB1F4200531852 /* CardItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54E29CB1F4200531852 /* CardItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		6385E54229C9B85400531852 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		6385E54429C9B98200531852 /* CreateCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardVC.swift; sourceTree = "<group>"; };
 		6385E54629C9BA7A00531852 /* CreateCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewModel.swift; sourceTree = "<group>"; };
+		6385E54D29CB1F4200531852 /* CardItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6385E54E29CB1F4200531852 /* CardItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		6385E53F29C9B02F00531852 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6385E55129CB1F4E00531852 /* CardItem */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +174,15 @@
 				6385E54229C9B85400531852 /* Extenstions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6385E55129CB1F4E00531852 /* CardItem */ = {
+			isa = PBXGroup;
+			children = (
+				6385E54D29CB1F4200531852 /* CardItem+CoreDataClass.swift */,
+				6385E54E29CB1F4200531852 /* CardItem+CoreDataProperties.swift */,
+			);
+			path = CardItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +320,8 @@
 				6385E54329C9B85400531852 /* Extenstions.swift in Sources */,
 				6385E50C29C732BC00531852 /* AppDelegate.swift in Sources */,
 				6385E51629C732BC00531852 /* FlipCard_Memorize.xcdatamodeld in Sources */,
+				6385E55029CB1F4200531852 /* CardItem+CoreDataProperties.swift in Sources */,
+				6385E54F29CB1F4200531852 /* CardItem+CoreDataClass.swift in Sources */,
 				6385E54529C9B98200531852 /* CreateCardVC.swift in Sources */,
 				6385E54729C9BA7A00531852 /* CreateCardViewModel.swift in Sources */,
 				6385E50E29C732BC00531852 /* SceneDelegate.swift in Sources */,
