@@ -71,14 +71,33 @@ class CreateCardVC: UIViewController {
                     self?.answerTxtField.warningBorder()
                 }
                 
-                let alert = UIAlertController(title: "Warning!", message: message, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .default))
-                
-                self?.present(alert, animated: true)
+                self?.showAlertMsg(msg: message)
             }
             
         }
         
+        
+        self.viewModel.showCreateSuccAlert = { [weak self] createResult in
+            
+            self?.showAlertMsg(msg: createResult)
+        }
+        
+        self.viewModel.resetFields = { [weak self] resetResult in
+           
+            if resetResult {
+                self?.quesTxtField.text = ""
+                self?.answerTxtField.text = ""
+            }
+        }
+        
+    }
+    
+    func showAlertMsg(msg : String) {
+       
+        let alert = UIAlertController(title: "Alert!", message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        
+        self.present(alert, animated: true)
     }
     
     @IBAction func saveAction(_ sender: Any) {
