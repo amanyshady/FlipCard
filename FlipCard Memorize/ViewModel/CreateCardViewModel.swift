@@ -55,7 +55,7 @@ class CreateCardViewModel {
             createCardItemSucces = CoreDataManager.shared.createCardItem(question: quesText, answer: answerTxt).rawValue
             
             //2- reset the question and answer fields
-            if CoreDataManager.shared.createCardItem(question: quesText, answer: answerTxt) == AlertMesg.createSucces {
+            if createCardItemSucces == AlertMesg.createSucces.rawValue {
                 
                 resetTxtFields = true
             }else {

@@ -76,14 +76,14 @@ class CoreDataManager {
     }
     
     
-    func getAllCardItems() -> [CardItem] {
+    func getAllCardItems(completion : @escaping (_ cardList : [CardItem]) -> ())  {
         
         let request = CardItem.fetchRequest()
         
         do {
-            return try viewContext.fetch(request)
+            completion( try viewContext.fetch(request))
             } catch {
-                return []
+               completion([])
             }
         
     }
