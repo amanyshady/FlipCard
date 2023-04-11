@@ -17,7 +17,6 @@
 		6385E51629C732BC00531852 /* FlipCard_Memorize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6385E51429C732BC00531852 /* FlipCard_Memorize.xcdatamodeld */; };
 		6385E51829C732BF00531852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6385E51729C732BF00531852 /* Assets.xcassets */; };
 		6385E51B29C732BF00531852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6385E51929C732BF00531852 /* LaunchScreen.storyboard */; };
-		6385E52629C732C000531852 /* FlipCard_MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E52529C732C000531852 /* FlipCard_MemorizeTests.swift */; };
 		6385E53029C732C000531852 /* FlipCard_MemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E52F29C732C000531852 /* FlipCard_MemorizeUITests.swift */; };
 		6385E53229C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E53129C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift */; };
 		6385E54329C9B85400531852 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54229C9B85400531852 /* Extenstions.swift */; };
@@ -27,6 +26,7 @@
 		6385E55029CB1F4200531852 /* CardItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E54E29CB1F4200531852 /* CardItem+CoreDataProperties.swift */; };
 		6385E55329CB236900531852 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E55229CB236900531852 /* CoreDataManager.swift */; };
 		6385E55529CC6D5F00531852 /* MemorizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385E55429CC6D5F00531852 /* MemorizeVC.swift */; };
+		63A6749F29E5716D0041B68F /* WellcomVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6749E29E5716D0041B68F /* WellcomVCTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		6385E51A29C732BF00531852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6385E51C29C732BF00531852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6385E52129C732C000531852 /* FlipCard MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlipCard MemorizeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6385E52529C732C000531852 /* FlipCard_MemorizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard_MemorizeTests.swift; sourceTree = "<group>"; };
 		6385E52B29C732C000531852 /* FlipCard MemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlipCard MemorizeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6385E52F29C732C000531852 /* FlipCard_MemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard_MemorizeUITests.swift; sourceTree = "<group>"; };
 		6385E53129C732C000531852 /* FlipCard_MemorizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard_MemorizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		6385E54E29CB1F4200531852 /* CardItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6385E55229CB236900531852 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		6385E55429CC6D5F00531852 /* MemorizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeVC.swift; sourceTree = "<group>"; };
+		63A6749E29E5716D0041B68F /* WellcomVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomVCTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		6385E52429C732C000531852 /* FlipCard MemorizeTests */ = {
 			isa = PBXGroup;
 			children = (
-				6385E52529C732C000531852 /* FlipCard_MemorizeTests.swift */,
+				63A6749E29E5716D0041B68F /* WellcomVCTest.swift */,
 			);
 			path = "FlipCard MemorizeTests";
 			sourceTree = "<group>";
@@ -271,6 +271,7 @@
 					};
 					6385E52029C732C000531852 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = 6385E50729C732BC00531852;
 					};
 					6385E52A29C732C000531852 = {
@@ -352,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6385E52629C732C000531852 /* FlipCard_MemorizeTests.swift in Sources */,
+				63A6749F29E5716D0041B68F /* WellcomVCTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,15 +582,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-MemorizeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipCard Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlipCard Memorize";
@@ -601,11 +609,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6A2C5Q2FLU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Amany.shady.FlipCard-MemorizeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,8 +22,6 @@ class WellcomeVC: UIViewController {
     }
     
     func setupUI() {
-       
-        
         createCardBtn.roundedButn()
         memorizeBtn.roundedButn()
         
